@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+12.times do |item|
+  Portfolio.create!(
+    title: "Portfolio #{item}",
+    body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem natus nihil quo quidem perspiciatis atque inventore aspernatur. Explicabo deserunt, magnam neque voluptates aliquam nam doloribus iusto facilis maxime dolor illum praesentium vero, cupiditate, distinctio quod obcaecati iste ipsum iure veniam?",
+    main_image: "https://placeholder.com/600x400",
+    thumb_image: "https://placeholder.com/300x200"
+  )
+end
