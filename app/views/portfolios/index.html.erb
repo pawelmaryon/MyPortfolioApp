@@ -1,0 +1,15 @@
+<div class="container">
+  <%= link_to "new portfolio", new_portfolio_path %>
+  <h1>My projects</h1>
+  <div class="portfolio-wrapper">
+    <% @portfolios.each do |portfolio| %>
+      <%= link_to portfolio_path(portfolio)do %>
+      <div class="portfolio-item">
+        <%= image_tag portfolio.thumb_image%>
+        <h2><%= portfolio.title %></h2>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
