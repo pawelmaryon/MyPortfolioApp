@@ -1,7 +1,16 @@
 <h1><%= @portfolio.title %></h1>
 
 <div>
-  <div><%= @portfolio.body %></div>
-  
   <%= image_tag @portfolio.main_image %>
+  <div><%= @portfolio.body %></div>
+  <div>
+    <%= link_to "edit #{@portfolio.title}", edit_portfolio_path(@portfolio), class:"utility-btn"  %>
+  </div>
+  <div>
+    <%= link_to "delete #{@portfolio.title}", portfolio_path(@portfolio), class:"utility-btn", data: {
+                                                                                              method: :delete,
+                                                                                              confirm: "Are you sure?"
+    }  %>
+  </div>
+ 
 </div>
