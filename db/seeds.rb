@@ -5,6 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+5.times do |skill|
+  Skill.create!(
+    title: "my skill number #{skill}",
+    procent: 10 +skill
+  )
+end
+
 12.times do |item|
   Portfolio.create!(
     title: "Portfolio #{item}",
