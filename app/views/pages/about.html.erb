@@ -1,2 +1,11 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+
+<div class="all-pages-container">
+ <div class="skill-wrapper" >
+    <% @skills.each do |skill| %>
+      <div>
+        <h3><%= skill.title %></h3>
+        <p><%= skill.procent %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

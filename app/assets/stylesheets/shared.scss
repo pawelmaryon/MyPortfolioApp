@@ -1,0 +1,18 @@
+.nav-container {
+  background-color: rgb(220, 220, 220);
+  width: 80%;
+  padding: 12px;
+  margin: auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
