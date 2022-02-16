@@ -1,13 +1,6 @@
 <h1>Pages#home</h1>
-<div class="wrapper">
-  <div class="skill-wrapper" >
-    <% @skills.each do |skill| %>
-      <div>
-        <h3><%= skill.title %></h3>
-        <p><%= skill.procent %></p>
-      </div>
-    <% end %>
-  </div>
+<div class="all-pages-container">
+ 
   <div >
     <% @portfolios.each do |portfolio| %>
       <div class="portfolio-item-wrapper"><%= link_to portfolio.title, portfolio_path(portfolio) %></div>

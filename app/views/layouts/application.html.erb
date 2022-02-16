@@ -10,9 +10,9 @@
   </head>
 
   <body>
-  <%= link_to "home", root_path %>
-  <%= link_to "portfolio", portfolios_path %>
-
-    <%= yield %>
+    <div class="container">
+      <%= render "shared/navbar" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
