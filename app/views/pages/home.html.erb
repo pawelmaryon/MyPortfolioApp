@@ -1,9 +1,4 @@
-<h1>Pages#home</h1>
-<div class="all-pages-container">
- 
-  <div >
-    <% @portfolios.each do |portfolio| %>
-      <div class="portfolio-item-wrapper"><%= link_to portfolio.title, portfolio_path(portfolio) %></div>
-    <% end %>
-  </div>
+<div class="home-container">
+  <h1>Pawel Maryon</h1>
+  <%= link_to "About-Me", pages_about_path, class:"btn" %>
 </div>
