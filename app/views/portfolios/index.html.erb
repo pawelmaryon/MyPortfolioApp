@@ -14,7 +14,7 @@
       <% end %>
     <% end %>
     <div>
-      <%= link_to "new portfolio", new_portfolio_path %>
+      <%= link_to "new portfolio", new_portfolio_path if user_signed_in? %>
     </div>
   </div>
 
