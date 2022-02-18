@@ -6,12 +6,15 @@
 
 .container {
   display: block;
-  width: 100%;
-  
+  width: 80%;
+  margin: auto;
+  height: 83vh;
+ 
 }
 .all-pages-container {
-  
-  width: 80%;
+  background-color: aliceblue;
+  width: 100%;
   padding: 12px;
   margin: auto;
+  height: 100%;
 }
