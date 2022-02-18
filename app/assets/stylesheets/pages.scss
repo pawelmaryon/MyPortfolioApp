@@ -4,7 +4,7 @@
 .about-container {
   display: flex;
   justify-content:space-between ;
-  
+  height: 83vh;
 }
 
 .about-address {
@@ -13,7 +13,7 @@
   width: 45%;
   text-align: center;
   padding: 12%;
-  
+  height: 19%;
 }
 
 .btn  {
@@ -39,4 +39,9 @@
 
 .homepage-header {
  
+}
+
+.skill-wrapper {
+  height: 83vh;
+  display: grid;
 }
