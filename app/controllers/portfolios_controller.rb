@@ -6,6 +6,8 @@ class PortfoliosController < ApplicationController
   end
 
   def show
+    webAddress = @portfolio.website.scan(/w{3}[.].+[.].{2,}/) 
+    @portfolio.website = webAddress.to_s
   end
   def new
     @portfolio = Portfolio.new
@@ -35,7 +37,11 @@ class PortfoliosController < ApplicationController
   private
 
   def portfolio_params
-    params.require(:portfolio).permit(:title, :body, :main_image, :thumb_image)
+    params.require(:portfolio).permit(:title, 
+                                      :body, 
+                                      :main_image, 
+                                      :thumb_image,
+                                      :website)
   end
   def find_portfolio
     @portfolio = Portfolio.find(params[:id])

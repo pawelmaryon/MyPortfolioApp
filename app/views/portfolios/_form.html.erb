@@ -8,6 +8,10 @@
     <%= form.text_area :body %>
   </div>
   <div>
+    <%= form.label :website %>
+    <%= form.text_area :website if format: /w{3}[.].+[.].{2,}/ %>
+  </div>
+  <div>
     <%= form.label :main_image %>
     <%= form.text_area :main_image, value:"https://via.placeholder.com/600x400" %>
   </div>
