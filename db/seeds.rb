@@ -17,6 +17,8 @@ end
     title: "Portfolio #{item}",
     body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem natus nihil quo quidem perspiciatis atque inventore aspernatur. Explicabo deserunt, magnam neque voluptates aliquam nam doloribus iusto facilis maxime dolor illum praesentium vero, cupiditate, distinctio quod obcaecati iste ipsum iure veniam?",
     main_image: "https://via.placeholder.com/600x400",
-    thumb_image: "https://via.placeholder.com/300x200"
+    thumb_image: "https://via.placeholder.com/300x200",
+    website: "www.google.com"
+
   )
 end

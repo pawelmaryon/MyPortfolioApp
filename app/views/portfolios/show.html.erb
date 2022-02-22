@@ -1,4 +1,4 @@
-<h1><%= @portfolio.title %></h1>
+<h1><%=link_to @portfolio.title, URI::HTTP.build({:host => @portfolio.website}).to_s, target: "_blank" %></h1>
 
 <div>
   <%= image_tag @portfolio.main_image %>
